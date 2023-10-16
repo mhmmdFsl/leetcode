@@ -1,6 +1,7 @@
 package pascal_triangel
 
 import (
+	"fmt"
 	"reflect"
 	"testing"
 )
@@ -16,6 +17,7 @@ func TestPascalTriangel(t *testing.T) {
 	e = append(e, []int{1, 3, 3, 1})
 	e = append(e, []int{1, 4, 6, 4, 1})
 	compareSlices(e, pt, t)
+	fmt.Printf("Test Success\n")
 }
 
 func compareSlices(slice1, slice2 [][]int, t *testing.T) {
